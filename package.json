@@ -1,0 +1,16 @@
+{
+  "name": "typescript-interview-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A structured TypeScript practice repository for senior frontend interview preparation.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}
