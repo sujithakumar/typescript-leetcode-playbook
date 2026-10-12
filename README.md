@@ -23,36 +23,26 @@ git --version
 
 
 ## Setup
-# Move into the project folder first.
-cd project_folder
+- Move into the project folder first.
+- cd project_folder
 
-# Install the project-local TypeScript compiler.
-npm install
+- Install the project-local TypeScript compiler.
+- npm install
 
-# Type-check without generating output.
-npm run check
+- Type-check without generating output.
+- npm run check
 
-# Compile TypeScript into dist/.
-npm run build
+- Compile TypeScript into dist/.
+- npm run build
 
-# Run the compiled example.
-npm start
+- Run the compiled example.
+- npm start
 
-`npm install` creates `package-lock.json`. Commit that file so installs remain reproducible.
-TypeScript is installed locally in this project rather than globally.
-
-## Useful commands
-
-| Command | What it does |
-| --- | --- |
-| `npm run check` | Checks types without writing compiled files |
-| `npm run build` | Compiles `src/` into `dist/` |
-| `npm start` | Runs the compiled entry point |
-| `npm run dev` | Watches and recompiles TypeScript when files change |
-
-When using `npm run dev`, keep that terminal open. In a second terminal, run `npm start`
-after compilation to execute the latest output.
-
+- To run individual files:
+-- npm install -D tsx 
+-- npm rebuild esbuild
+-- npm install
+-- npx tsx index.ts
 
 
 For each topic:
